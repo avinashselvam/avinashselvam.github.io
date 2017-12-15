@@ -2,7 +2,7 @@
     <head>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <title>
-            Avinash | blog
+            Avinash.me
         </title>
         <style>
             body{
@@ -17,15 +17,18 @@
             h2{
                 font-size: 2vw;
             }
+            h3{
+                font-size: 1.2vw;
+            }
             .content{
-                margin-left: 8vw;
+                margin-left: 5vw;
                 margin-top: 5vh;
             }
             .left{
                 position: fixed;
                 top:0;
                 bottom: 0;
-                right: 92vw;
+                right: 95vw;
                 left:0;
 
             }
@@ -37,6 +40,10 @@
             span{
                 color: blue;
             }
+            a{
+                color: blue;
+                font-weight: 300;
+            }
             .projects{
                 display: flex;
                 flex-wrap: wrap;
@@ -44,9 +51,10 @@
             .card{
                 flex:1;
                 height: 40vh;
-                max-width: 300px;
-                border: solid gainsboro 1px;
-                margin: 0 10px 10px 0;
+                min-width: 30%;
+                max-width: 30%;
+                border: solid whitesmoke 1px;
+                margin: 0 30px 30px 0;
                 transition: all 0.3s ease-out;
             }
 
@@ -86,8 +94,8 @@
         <div class="content">
             <h1>Hi there,<br>I am Avinash</h1>
             <h2>I am good at <span>design</span> and currently learning to <span>code</span></h2>
-            <hr>
-            <h2 style="margin-top: 10vh;">List of my projects :</h2>
+            <h3><a href="">Linkedin</a> . <a href="">Medium</a> . <a href="">avinashpanneer@gmail.com</a></h3>
+            <h2 style="margin-top: 10vh;">List of my work :</h2>
             <div class="projects">
                 <!-- <div class="card">
                     <div class="img"></div>
@@ -98,7 +106,37 @@
                 <div class="card">
                     <div class="img"></div>
                     <div class="title">Hand recognition with OPEN-CV</div>
-                    <div class="desc">Used C++ with OPEN-CV library to recognise fingertips and eventually used it as input to draw</div>
+                    <div class="desc">Used C++ with OPEN-CV library to recognise fingertips and eventually used it as input to draw.</div>
+                </div>
+                <div class="card">
+                    <div class="img"></div>
+                    <div class="title">AR maze with Unity and Vuforia</div>
+                    <div class="desc">Inspired by Apple's keynote, made a simple ball-maze with gravity effects</div>
+                </div>
+                <div class="card">
+                    <div class="img"></div>
+                    <div class="title">Maximl | Design Intern - II</div>
+                    <div class="desc"></div>
+                </div>
+                <div class="card">
+                    <div class="img"></div>
+                    <div class="title">Maximl | Design Intern - I</div>
+                    <div class="desc">Had first hand experience of designing an enterprise application from scratch for web and mobile, alone</div>
+                </div>
+                <div class="card">
+                    <div class="img"></div>
+                    <div class="title">Frontend Lead at Shaastra</div>
+                    <div class="desc">Implemented a lot of User centric design principles for many sites. Had to quit due to major difference of opinion</div>
+                </div>
+                <div class="card">
+                    <div class="img"></div>
+                    <div class="title">Design Co-ordinator at Shaastra</div>
+                    <div class="desc"></div>
+                </div>
+                <div class="card">
+                    <div class="img"></div>
+                    <div class="title">Where it all started | Gamemaker</div>
+                    <div class="desc">Published 2 games for Android made using GMS, which was my first place to write code.</div>
                 </div>
             </div>
         </div>
