@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <title>
+            Avinash | blog
+        </title>
+        <style>
+            body{
+                background-color: white;
+                color: black;
+                font-family: 'Open Sans', sans-serif;
+            }
+            h1{
+                font-size: 5vw;
+            }
+
+            h2{
+                font-size: 2vw;
+            }
+            .content{
+                margin-left: 8vw;
+                margin-top: 5vh;
+            }
+            .left{
+                position: fixed;
+                top:0;
+                bottom: 0;
+                right: 92vw;
+                left:0;
+
+            }
+            hr{
+                /* border:solid black 1px; */
+                width: 70vw;
+                float: left;
+            }
+            span{
+                color: blue;
+            }
+            .projects{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .card{
+                flex:1;
+                height: 40vh;
+                max-width: 300px;
+                border: solid gainsboro 1px;
+                margin: 0 10px 10px 0;
+                transition: all 0.3s ease-out;
+            }
+
+            .card .img{
+                height: 50%;
+            }
+
+            .card .title{
+                font-weight: 600;
+                font-size: 21px;
+                padding: 0.5vh 1vw;
+
+            }
+
+            .card .desc{
+                font-weight: 300;
+                font-size: 16px;
+                color: #808080;
+                padding: 0.5vh 1vw;
+            }
+
+            .card:hover{
+                border: solid blue 1px;
+                box-shadow: 0 10px 15px 5px gainsboro;
+                border-radius: 2px;
+                transition: all 0.3s ease-out;
+                cursor: pointer;
+                transform: translateY(-2px);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="left">
+            
+        </div>
+        <div class="content">
+            <h1>Hi there,<br>I am Avinash</h1>
+            <h2>I am good at <span>design</span> and currently learning to <span>code</span></h2>
+            <hr>
+            <h2 style="margin-top: 10vh;">List of my projects :</h2>
+            <div class="projects">
+                <!-- <div class="card">
+                    <div class="img"></div>
+                    <div class="title"></div>
+                    <div class="desc"></div>
+                </div> -->
+
+                <div class="card">
+                    <div class="img"></div>
+                    <div class="title">Hand recognition with OPEN-CV</div>
+                    <div class="desc">Used C++ with OPEN-CV library to recognise fingertips and eventually used it as input to draw</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
