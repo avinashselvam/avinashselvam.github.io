@@ -47,14 +47,16 @@
             .projects{
                 display: flex;
                 flex-wrap: wrap;
+                width: 90vw;
+                margin-bottom: 10vh;
             }
             .card{
                 flex:1;
                 height: 40vh;
-                min-width: 30%;
-                max-width: 30%;
                 border: solid whitesmoke 1px;
-                margin: 0 30px 30px 0;
+                min-width: 300px;
+                /* margin: 0 30px 30px 0; */
+                margin: 0;
                 transition: all 0.3s ease-out;
             }
 
@@ -75,14 +77,48 @@
                 color: #808080;
                 padding: 0.5vh 1vw;
             }
-
-            .card:hover{
+            @media only screen and (min-width: 768px){
+                .card:hover{
                 border: solid blue 1px;
-                box-shadow: 0 10px 15px 5px gainsboro;
+                box-shadow: 0 10px 15px 2px gainsboro;
                 border-radius: 2px;
                 transition: all 0.3s ease-out;
                 cursor: pointer;
                 transform: translateY(-2px);
+            }
+            }
+            
+
+            @media only screen and (max-width: 768px) {
+                h1{
+                    font-size: 10vw;
+                }
+                h2{
+                    font-size: 5vw;
+                }
+                h3{
+                    font-size: 3vw;
+                }
+                .card{
+                    height: auto;
+                    border: 0;
+                    border-bottom: solid gainsboro 1px;
+                    padding: 1vh 0;
+                    
+                }
+
+                .card .title{
+                    font-size: 14px;
+                }
+
+                .card .desc{
+                    font-size: 14px;
+                }
+
+                .card .img{
+                    display: none;
+                }
+                
             }
 
         </style>
@@ -138,6 +174,10 @@
                     <div class="title">Where it all started | Gamemaker</div>
                     <div class="desc">Published 2 games for Android made using GMS, which was my first place to write code.</div>
                 </div>
+                <div class="card" style="visibility:hidden">
+                    <div class="img"></div>
+                    <div class="title"></div>
+                    <div class="desc"></div>
             </div>
         </div>
     </body>
