@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width" />
+
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <title>
             Avinash.me
@@ -62,6 +64,9 @@
 
             .card .img{
                 height: 50%;
+                background-size: 90%;
+                background-repeat: no-repeat;
+                background-position: center;
             }
 
             .card .title{
@@ -80,7 +85,7 @@
             @media only screen and (min-width: 768px){
                 .card:hover{
                 border: solid blue 1px;
-                box-shadow: 0 10px 15px 2px gainsboro;
+                box-shadow: 0 0 15px 2px gainsboro;
                 border-radius: 2px;
                 transition: all 0.3s ease-out;
                 cursor: pointer;
@@ -130,7 +135,7 @@
         <div class="content">
             <h1>Hi there,<br>I am Avinash</h1>
             <h2>I am good at <span>design</span> and currently learning to <span>code</span></h2>
-            <h3><a href="">Linkedin</a> . <a href="">Medium</a> . <a href="">avinashpanneer@gmail.com</a></h3>
+            <h3><a href="https://www.linkedin.com/in/avinash-selvam-b3372a106/">Linkedin</a> . <a href="https://github.com/avinashselvam">Github</a> . <a href="mailto:avinashpanneer@gmail.com">avinashpanneer@gmail.com</a></h3>
             <h2 style="margin-top: 10vh;">List of my work :</h2>
             <div class="projects">
                 <!-- <div class="card">
@@ -140,37 +145,32 @@
                 </div> -->
 
                 <div class="card">
-                    <div class="img"></div>
+                    <div class="img" style="background-image:url(images/cv.png)"></div>
                     <div class="title">Hand recognition with OPEN-CV</div>
                     <div class="desc">Used C++ with OPEN-CV library to recognise fingertips and eventually used it as input to draw.</div>
                 </div>
-                <div class="card">
-                    <div class="img"></div>
+                <div class="card" >
+                    <div class="img" style="background-image:url(images/ar.png)"></div>
                     <div class="title">AR maze with Unity and Vuforia</div>
                     <div class="desc">Inspired by Apple's keynote, made a simple ball-maze with gravity effects</div>
                 </div>
                 <div class="card">
-                    <div class="img"></div>
-                    <div class="title">Maximl | Design Intern - II</div>
-                    <div class="desc"></div>
+                    <div class="img" style="background-image:url(images/maximl.png)"></div>
+                    <div class="title">Maximl | Design Intern</div>
+                    <div class="desc">Had first hand experience of designing an enterprise application from scratch for web and mobile, all alone :)</div>
                 </div>
                 <div class="card">
-                    <div class="img"></div>
-                    <div class="title">Maximl | Design Intern - I</div>
-                    <div class="desc">Had first hand experience of designing an enterprise application from scratch for web and mobile, alone</div>
-                </div>
-                <div class="card">
-                    <div class="img"></div>
+                    <div class="img" style="background-image:url(images/shaastra.png)"></div>
                     <div class="title">Frontend Lead at Shaastra</div>
                     <div class="desc">Implemented a lot of User centric design principles for many sites. Had to quit due to major difference of opinion</div>
                 </div>
                 <div class="card">
-                    <div class="img"></div>
+                    <div class="img" style="background-image:url(images/envisage.png)"></div>
                     <div class="title">Design Co-ordinator at Shaastra</div>
-                    <div class="desc"></div>
+                    <div class="desc">Experimented with Adobe creative suite. Made posters, vfx and branding content.</div>
                 </div>
                 <div class="card">
-                    <div class="img"></div>
+                    <div class="img" style="background-image:url(images/gms.webp)"></div>
                     <div class="title">Where it all started | Gamemaker</div>
                     <div class="desc">Published 2 games for Android made using GMS, which was my first place to write code.</div>
                 </div>
@@ -178,6 +178,11 @@
                     <div class="img"></div>
                     <div class="title"></div>
                     <div class="desc"></div>
+            </div>
+            <div class="card" style="visibility:hidden">
+                <div class="img"></div>
+                <div class="title"></div>
+                <div class="desc"></div>
             </div>
         </div>
     </body>
