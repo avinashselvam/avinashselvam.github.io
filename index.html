@@ -87,6 +87,22 @@
             a{
                     text-decoration: none;
                 }
+
+                h3 a:hover{
+                    text-decoration: underline;
+                }
+            
+            .pp{
+                border-radius: 50%;
+                height: 250px;
+                width: 250px;
+                background-image: url("images/pp.jpeg");
+                background-size: contain;
+                /* filter: grayscale(1); */
+                position: absolute;
+                right: 10%;
+                top: 10%;
+            }
             
             @media only screen and (min-width: 768px){
                 .card:hover{
@@ -119,6 +135,10 @@
                     
                 }
 
+                .pp{
+                    display: none;
+                }
+
                 
 
                 
@@ -147,6 +167,7 @@
             <h1>Hi there,<br>I am Avinash</h1>
             <h2>I am good at <span>design</span> and currently learning to <span>code</span></h2>
             <h3><a href="https://www.linkedin.com/in/avinash-selvam-b3372a106/">Linkedin</a> . <a href="https://github.com/avinashselvam">Github</a> . <a href="mailto:avinashpanneer@gmail.com">avinashpanneer@gmail.com</a></h3>
+            <div class="pp"></div>
             <h2 style="margin-top: 10vh;">List of my work :</h2>
             <div class="projects">
                 <!-- <div class="card">
@@ -154,6 +175,21 @@
                     <div class="title"></div>
                     <div class="desc"></div>
                 </div> -->
+                <a class="card" href="#">
+                    <div>
+                        <div class="img" style="background-image:url(images/aws.png)"></div>
+                        <div class="title">Winning AWS Deep Learning Hackathon</div>
+                        <div class="desc">Being a newbie, I found myself in a good team that executed a great idea to win the day</div>
+                    </div>
+                </a>
+
+                <a class="card" href="#">
+                    <div>
+                        <div class="img" style="background-image:url(images/600.png)"></div>
+                        <div class="title">Conducting a Web Dev 101</div>
+                        <div class="desc">Being a self learner, I had great pleasure in teaching around 600 students the basics of web programming as part of Shaastra 2018</div>
+                    </div>
+                </a>
 
 
                 <a class="card" href="http://www.github.com/avinashselvam">
@@ -171,13 +207,13 @@
                 <a class="card" href="http://www.maximl.com">
                 <div>
                     <div class="img" style="background-image:url(images/maximl.png)"></div>
-                    <div class="title">Maximl | Design Intern</div>
+                    <div class="title">Design Intern at Maximl Labs</div>
                     <div class="desc">Had first hand experience of designing an enterprise application from scratch for web and mobile, all alone :)</div>
                 </div></a>
                 <a class="card" href="http://www.shaastra.org">
                 <div>
                     <div class="img" style="background-image:url(images/shaastra.png)"></div>
-                    <div class="title">Frontend Lead at Shaastra</div>
+                    <div class="title">Lead Frontend Developer at Shaastra</div>
                     <div class="desc">Implemented a lot of User centric design principles for many sites. Had to quit due to major difference of opinion</div>
                 </div></a>
                 <a class="card" href="http://www.facebook.com/shaastra">
@@ -189,10 +225,10 @@
                 <a class="card" href="https://play.google.com/store/apps/dev?id=8617761430409164175&hl=en">
                 <div>
                     <div class="img" style="background-image:url(images/gms.webp)"></div>
-                    <div class="title">Where it all started | Gamemaker</div>
+                    <div class="title">It all started here, Gamemaker</div>
                     <div class="desc">Published 2 games for Android made using GMS, which was my first place to write code.</div>
                 </div></a>
-                <div class="card" style="visibility:hidden">
+                <!-- <div class="card" style="visibility:hidden">
                     <div class="img"></div>
                     <div class="title"></div>
                     <div class="desc"></div>
@@ -201,7 +237,7 @@
                 <div class="img"></div>
                 <div class="title"></div>
                 <div class="desc"></div>
-            </div>
+            </div> -->
         </div>
     </body>
 </html>
