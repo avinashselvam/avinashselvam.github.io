@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Raleway:400,700');
+
+body{
+    width: 100vw;
+    height: 100vh;
+    text-align: left;
+    font-family: monospace;
+}
+
+h1{
+
+}
+
+h2{
+    font-size: 24pt;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+form{
+    margin-top: 20vh;
+}
+
+input, button{
+    font-size: 14pt;
+    border: none;
+    width: 25vw;
+}
+
+input{
+    border-bottom: black 1px solid;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+button{
+    outline: black 1px solid; 
+    padding: 15px;
+    border-radius: 3px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+button:active{
+    
+}
+
+.entire{
+    margin: 0 35vw;
+}
+
+@media only screen and (min-width: 600px) {
+    
+}
