@@ -1,8 +1,6 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width" />
-
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700" rel="stylesheet">
         <title>
             Avinash.me
         </title>
@@ -10,38 +8,31 @@
             body{
                 background-color: white;
                 color: black;
-                font-family: 'Open Sans', sans-serif;
+                font-family: Helvetica, sans-serif;
             }
 
-            .links{
-                
-            }
             h1{
                 letter-spacing: 4px;
                 font-size: 5vw;
                 margin: 5px 0;
             }
 
-            h2{
-                font-size: 2vw;
-                color: black;
-                font-weight: 300;
-            }
             h3{
-                font-size: 18px;
-                font-weight: 100;
-                color: gray;
-                margin: 0;
-                letter-spacing: 1px;
+                font-weight: 400;
             }
 
-            h3 a{
+            .projects h2{
+                font-weight: 600;
                 font-size: 18px;
-                letter-spacing: 0px;
-                padding: 2px 5px;
-                color: black;
-                border: 1px solid black;
             }
+
+            .projects h3{
+                font-weight: 400;
+                font-size: 14px;
+                margin: 10px 0 10px 0px;
+                width: 100%;
+            }
+
             .content{
                 margin-left: 5vw;
                 margin-top: 5vh;
@@ -54,133 +45,37 @@
                 left:0;
 
             }
+
             hr{
                 /* border:solid black 1px; */
                 width: 70vw;
                 float: left;
             }
+
             span{
                 color: blue;
             }
+
             a{
                 color: blue;
                 font-weight: 300;
             }
+
             .projects{
                 display: flex;
                 flex-wrap: wrap;
                 width: 90vw;
-                margin: 20vh 0;
-            }
-            .card{
-                flex:1;
-                height: 400px;
-                /* border: solid whitesmoke 1px; */
-                min-width: 300px;
-                /* margin: 0 30px 30px 0; */
-                margin: 0 40px 40px 0;
-                transition: all 0.3s ease-out;
             }
 
-            .card .img{
-                height: 50%;
-                background-size: 120%;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            .card .title{
+            .title{
                 color: black;
-                font-weight: 600;
-                font-size: 21px;
-                padding: 2vh 1vw;
-
             }
 
-            .card .desc{
-                font-weight: 300;
-                font-size: 16px;
-                color: #808080;
-                padding: 0vh 1vw;
+            .desc{
+                color: grey;
             }
 
-            a{
-                    text-decoration: none;
-                }
-
-                h3 a:hover{
-                    background-color:whitesmoke;
-                }
             
-            .pp{
-                border-radius: 50%;
-                height: 250px;
-                width: 250px;
-                background-image: url("images/pp.jpeg");
-                background-size: contain;
-                /* filter: grayscale(1); */
-                position: absolute;
-                right: 10%;
-                top: 10%;
-            }
-            
-            @media only screen and (min-width: 768px){
-                .card:hover{
-                /* border: solid blue 1px; */
-                box-shadow: 0 2px 10px 2px gainsboro;
-                /* border-radius: 2px; */
-                transition: all 0.3s ease-out;
-                cursor: pointer;
-                transform: translateY(-2px);
-            }
-            }
-            
-
-            @media only screen and (max-width: 768px) {
-                h1{
-                    font-size: 10vw;
-                }
-                h2{
-                    font-size: 18px;
-                }
-                h3{
-                    font-size: 3vw;
-                }
-                .card{
-                    height: 300px;
-                    border: 0;
-                    /* border-bottom: solid gainsboro 1px; */
-                    box-shadow: 0 0 5px 2px gainsboro;
-                    border-radius: 5px;
-                    margin: 8px 0;
-                    
-                    
-                }
-
-                .content{
-                    margin-left: 2vw;
-                    margin-top: 0vh;
-                }
-
-                .pp{
-                    display: none;
-                }
-
-                .card .title{
-                    margin-left: 15px;
-                    font-size: 18px;
-                }
-
-                .card .desc{
-                    margin-left: 15px;
-                    font-size: 14px;
-                }
-
-                .card .img{
-                    /* display: none; */
-                }
-                
-            }
 
         </style>
     </head>
@@ -190,111 +85,53 @@
         </div>
         <div class="content">
             
-            <h1>AVINASH.</h1>
-            <h3>IIT Madras, India</h3>
-            <div class="links" style="margin-top: 10vh;">
-                <h3>
-                    <a href="https://www.linkedin.com/in/avinash-selvam-b3372a106/">LINKEDIN</a> .
-                    <a href="https://github.com/avinashselvam">GITHUB</a> .
-                    <a href="mailto:avinashpanneer@gmail.com">E-MAIL</a> . 
-                    <a href="resume_dl.pdf" download>RESUME</a>                    
-                </h3>
+            <h2>AVINASH.</h2>
+            <h3>B.Tech in Mechanical Engg., M.Tech in Computational Engg.
+            <br>(kinda like a sandwich course)
+            <br>IIT Madras, India.</h3>
+            
+            <h3 style="width:70%">I'm interested in computers. I like to write code and design stuff.
+                That said I am no good a replacement for a CS grad.
+                I want to build user friendly products in the future.
+                Currently exploring - Computer Vision. Augmented Reality. Deep Learning</h3>
+
+            <div class="links">
+                    <a href="https://www.linkedin.com/in/avinash-selvam-b3372a106/">Linked In</a> .
+                    <a href="https://github.com/avinashselvam">Github</a> .
+                    <a href="mailto:avinashpanneer@gmail.com">Mail</a> . 
+                    <a href="resume_dl.pdf" download>CV (pdf)</a>                    
             </div>
 
-            <h2>Interests : Computer Vision. Augmented Reality. Deep Learning. Product Development.</h2>
             
-            <!-- <div class="pp"></div> -->
-            <!-- <h2 >W O R K</h2> -->
+            
+            
+            
             <div class="projects">
-                <!-- <div class="card">
-                    <div class="img"></div>
-                    <div class="title"></div>
-                    <div class="desc"></div>
-                </div> -->
-                <a class="card" href="https://github.com/avinashselvam">
-                    <div>
-                        <div class="img" style="background-image:url(images/iOS.jpeg); background-position:top"></div>
-                        <div class="title">Vision in iOS</div>
-                        <div class="desc">Made an app to recognise object (SqueezeNet - CoreML) and another fun app to display Ads when it sees a logo (ARKit).</div>
-                    </div>
-                </a>
+                <h2>Stuff I have done</h2>
 
-                <a class="card" href="https://github.com/avinashselvam/lane_departure">
-                    <div>
-                        <div class="img" style="background-image:url(images/lane.jpeg); background-position:top"></div>
-                        <div class="title">Lane Segmentation</div>
-                        <div class="desc">Used Open-CV to segment out the lane the car is following, which can be used to calculate deviation.</div>
-                    </div>
-                </a>
-                <a class="card" href="https://github.com/avinashselvam/ML-DL-projects">
-                    <div>
-                        <div class="img" style="background-image:url(images/fashion.png); background-position:top"></div>
-                        <div class="title">Clothing recommender with autoencoders</div>
-                        <div class="desc">Scraped around 10000 shirt images from an ecommerce site and trained an autoencoder to recommend similar looking apparel.</div>
-                    </div>
-                </a>
+                <h3>Extended Ray Tracer by Pete Shirely to render any triangulated mesh. <a href="">repo</a></h3>
+                 
+                <h3>Made fun iOS apps using CoreML and ARKit.</h3>
 
-                <a class="card" href="https://github.com/avinashselvam/ML-DL-projects">
-                    <div>
-                        <div class="img" style="background-image:url(images/age.png)"></div>
-                        <div class="title">Age and gender prediction Model</div>
-                        <div class="desc">Loved the prototyping capabilities of Keras, and made two separate models for age and gender. Understood the power of dimensionality reduction.</div>
-                    </div>
-                </a>
+                <h3>AI / Vision Engineer at <a href="http://dynamove.in">Dynamove</a> - a startup providing ADAS using computer vision for automobiles.</h3>
 
-                <a class="card" href="#">
-                    <div>
-                        <div class="img" style="background-image:url(images/aws.png)"></div>
-                        <div class="title">Winning AWS Deep Learning Hackathon</div>
-                        <div class="desc">Trained pix2pix a GAN network to produce colored images of pencil sketches</div>
-                    </div>
-                </a>
+                <h3>Clothing recommender using convolutional autoencoders. <a href="">repo</a></h3>
 
-                <a class="card" href="#">
-                    <div>
-                        <div class="img" style="background-image:url(images/600.png)"></div>
-                        <div class="title">Conducting a Web Dev 101</div>
-                        <div class="desc">Being a self learner, I had great pleasure in teaching around 600 students the basics of web programming as part of Shaastra 2018</div>
-                    </div>
-                </a>
+                <h3>Won Amazon Hackathon by training pix2pix (GAN) to produce colored images from pencil sketches.</h3>
 
+                <h3>Taught around 600 students the basics of web programming over 2 days.</h3>
 
-                <a class="card" href="http://www.github.com/avinashselvam">
-                <div>
-                    <div class="img" style="background-image:url(images/cv.png)"></div>
-                    <div class="title">Hand recognition with OPEN-CV</div>
-                    <div class="desc">Used C++ with OPEN-CV library to recognise fingertips and eventually used it as input to draw.</div>
-                </div></a>
-                <a class="card" href="http://www.github.com/avinashselvam">
-                <div>
-                    <div class="img" style="background-image:url(images/ar.png)"></div>
-                    <div class="title">AR maze with Unity and Vuforia</div>
-                    <div class="desc">Inspired by Apple's keynote on ARkit, made a simple ball-maze with gravity effects</div>
-                </div></a>
-                <a class="card" href="http://www.maximl.com">
-                <div>
-                    <div class="img" style="background-image:url(images/maximl.png)"></div>
-                    <div class="title">Design Intern at Maximl Labs</div>
-                    <div class="desc">Had first hand experience of designing an enterprise application from scratch for web and mobile, all alone :)</div>
-                </div></a>
-                <a class="card" href="http://www.shaastra.org">
-                <div>
-                    <div class="img" style="background-image:url(images/shaastra.png)"></div>
-                    <div class="title">Lead Frontend Developer at Shaastra</div>
-                    <div class="desc">Implemented a lot of User centric design principles for many sites. Had to quit due to major difference of opinion</div>
-                </div></a>
-                <a class="card" href="http://www.facebook.com/shaastra">
-                <div>
-                    <div class="img" style="background-image:url(images/envisage.png)"></div>
-                    <div class="title">Design Co-ordinator at Shaastra</div>
-                    <div class="desc">Experimented with Adobe creative suite. Made posters, vfx and branding content.</div>
-                </div></a>
-                <a class="card" href="https://play.google.com/store/apps/dev?id=8617761430409164175&hl=en">
-                <div>
-                    <div class="img" style="background-image:url(images/gms.webp)"></div>
-                    <div class="title">It all started here, Gamemaker</div>
-                    <div class="desc">Published 2 games for Android made using GMS, which was my first place to write code.</div>
-                </div></a>
-        </div>
+                <h3>Using OPEN-CV to generate a convex hull, recognise fingertips and eventually used it as input to draw.</h3>
+
+                <h3>Using Unity and Vuforia made a maze game with gravity effects.</h3>
+
+                <h3>UX Design Intern at <a href="http://maximl.com/">Maximl</a> - Enterprise application for project management.</h3>
+
+                <h3>Designer & Front End Developer at Shaastra. (Adobe Creative Suite, Angular JS)</h3>
+
+                <h3>Made and published 2 games in Gamemaker Studio for Android.</h3>
+                
+            </div>
+
     </body>
 </html>
